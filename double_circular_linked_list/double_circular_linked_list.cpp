@@ -49,5 +49,14 @@ void addNode() {
         if (current != NULL) {
             current->prev = newNode; // Step 6: make the previous field of the current point to the new node
         }
-
+        if (previous != NULL) {
+            previous->next = newNode; // Step 7: make the next field of the previous node point to the new node
+        }
+        else {
+            // If previous is still NULL, it means newNode is now the first node
+            START = newNode;
+        }
     }
+}
+
+    
