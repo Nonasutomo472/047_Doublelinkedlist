@@ -18,3 +18,10 @@ void addNode() {
     cout << "\nEnter the name of the student:";
     cin >> newNode->name; // assign value to the name field of the new node
 
+    if (START == NULL || newNode->noMhs <= START->noMhs) {
+        // Step 2: insert the new node
+        if (START != NULL && newNode->noMhs == START->noMhs) {
+            cout << "\033[31mDuplicate roll number not allowed\033[0m" << endl;
+            return;
+        }
+    }
