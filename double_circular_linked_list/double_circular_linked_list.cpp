@@ -107,3 +107,13 @@ void deleteNode()
         }
     }
     else
+    {
+        // Node to be deleted is not the first node
+        previous->next = current->next;
+        if (current->next != NULL)
+        {
+            // if there's a seccessor, update its prev pointer
+            current->next->prev = previous;
+
+        }
+    }
