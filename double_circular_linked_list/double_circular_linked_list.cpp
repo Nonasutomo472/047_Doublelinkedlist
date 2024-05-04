@@ -181,3 +181,18 @@ void searcData()
         cout << "\nName:" << curr->name << endl;
     }
 }
+int main()
+{
+    while (true)
+    {
+        try
+        {
+            cout << "\nMenu" << endl;
+            cout << "1. Add a record to the list" << endl;
+            cout << "2. Delete a record from the list" << endl;
+            cout << "3. view all records in the ascesding of roll numbers" << endl;
+            cout << "4. view all record in the descending ordr of roll number" << endl;
+            cout << "5. search for a record in the list" << endl;
+            cout << "6. exit" << endl;
+            char ch;
+            cin >> ch;
